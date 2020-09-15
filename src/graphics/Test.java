@@ -5,5 +5,6 @@ public class Test {
 		MenuBasic x= new MenuBasic();
 		Rules y = new Rules();
 		x.setVisiblePanel(y.getRules());
+		//
 	}
 }
