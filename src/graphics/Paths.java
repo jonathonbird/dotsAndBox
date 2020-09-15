@@ -18,6 +18,7 @@ public interface Paths {
 	public static final String BUTTON_SIZE1="";
 	public static final String BUTTON_SIZE2="";
 	public static final String BUTTON_SIZE3="";
-
 	
+	public static final int FRAME_WIDTH=640;
+	public static final int FRAME_HEIGHT=640;
 }
