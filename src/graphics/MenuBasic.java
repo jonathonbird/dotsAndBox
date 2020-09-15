@@ -15,6 +15,13 @@ public class MenuBasic {
 		frame.add(panel);
 	}
 	
+	public void setVisiblePanel(JPanel newPanel) {
+		frame.remove(panel);
+		this.panel=newPanel;
+		frame.add(panel);
+		refreshFrame();
+	}
+	
 	public JFrame getFrame() {
 		return frame;
 	}
