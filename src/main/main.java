@@ -1,6 +1,7 @@
 package main;
 
 public class main {
-	//test
-	//
+    public static void main (String [] args) {
+        System.out.println("hi");
+    }
 }
