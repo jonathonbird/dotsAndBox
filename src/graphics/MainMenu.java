@@ -22,11 +22,6 @@ public class MainMenu {
 		this.MainMenuPanel=new Background(Paths.BACKGROUND_MAIN);
 		this.MainMenuPanel.setLayout(null);
 		setUpImageButtons();
-		
-//		frame.removeAll();
-//		frame.add(MainMenuPanel);
-//		frame.setVisible(false);
-//		frame.setVisible(true);
 		System.out.println("Done");
 	}
 	
@@ -45,13 +40,7 @@ public class MainMenu {
 	}
 	
 	private void setUpPlay() {
-		ImageIcon icon = new ImageIcon(Paths.BUTTON_PLAY);
-		play=new JButton(icon);
-		play.setOpaque(false);
-		play.setContentAreaFilled(false);
-		play.setBorderPainted(false);
-		
-		play.setSize(Paths.BUTTONS_WIDTH,Paths.BUTTONS_HEIGHT);
+		play=Button(Paths.BUTTON_PLAY);
 		play.setLocation(160,237);
 //		play.addActionListener(new ActionListener() {
 //			public void actionPerformed(ActionEvent e) {
@@ -61,28 +50,26 @@ public class MainMenu {
 	}
 	
 	private void setUpRules() {
-		ImageIcon icon = new ImageIcon(Paths.BUTTON_RULES);
-		rules=new JButton(icon);
-		rules.setOpaque(false);
-		rules.setContentAreaFilled(false);
-		rules.setBorderPainted(false);
-		
-		rules.setSize(Paths.BUTTONS_WIDTH,Paths.BUTTONS_HEIGHT);
+		rules=Button(Paths.BUTTON_RULES);
 		rules.setLocation(160,329);
 		
 	}
 	
 	private void setUpCredits() {
-		ImageIcon icon = new ImageIcon(Paths.BUTTON_CREDITS);
-		credits=new JButton(icon);
-		credits.setOpaque(false);
-		credits.setContentAreaFilled(false);
-		credits.setBorderPainted(false);
-		
-		credits.setSize(Paths.BUTTONS_WIDTH,Paths.BUTTONS_HEIGHT);
+		credits=Button(Paths.BUTTON_CREDITS);
 		credits.setLocation(160,422);
 		
 		
 	}
-
+	
+	private JButton Button(String path) {
+		ImageIcon icon = new ImageIcon(path);
+		JButton button=new JButton(icon);
+		button.setOpaque(false);
+		button.setContentAreaFilled(false);
+		button.setBorderPainted(false);
+		button.setSize(Paths.BUTTONS_WIDTH,Paths.BUTTONS_HEIGHT);
+		return button;
+	}
+	
 }
