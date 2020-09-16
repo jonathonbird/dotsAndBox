@@ -7,7 +7,7 @@ public interface Paths {
 	public static final String BACKGROUND_MAIN="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\MainBackground2.png";
 	public static final String BACKGROUND_PLAY="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\GeneralBackground.png";
 	public static final String BACKGROUND_RULES="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\GeneralBackground.png";
-	public static final String BACKGROUND_CREDITS="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\GeneralBackground.png";
+	public static final String BACKGROUND_CREDITS="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\CreditBGpng.png";
 	
 	public static final String BUTTON_PLAY="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\Play.png";
 	public static final String BUTTON_RULES="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\HowtoPlay.png";
