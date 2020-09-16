@@ -24,4 +24,7 @@ public interface Paths {
 	
 	public static final int FRAME_WIDTH=640;
 	public static final int FRAME_HEIGHT=640;
+	
+	public static final int BUTTONS_WIDTH=346;
+	public static final int BUTTONS_HEIGHT=105;
 }
