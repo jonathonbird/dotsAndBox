@@ -1,5 +1,8 @@
 package graphics;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -15,12 +18,19 @@ public class MainMenu implements Menu{
 	private JButton credits;
 	
 	
-	public MainMenu() {
+	private MainMenu() {
 		this.MainMenuPanel=new Background(Paths.BACKGROUND_MAIN);
 		this.MainMenuPanel.setLayout(null);
 		setUpImageButtons();
 		System.out.println("Done");
 	}
+	
+	public void setUpActionListeners(MenuBasic base,Menu playM, Menu rulesM, Menu creditsM) {
+		Menu.setNavigationTo(base, this.play, playM);
+		Menu.setNavigationTo(base, this.rules, rulesM);
+		Menu.setNavigationTo(base, this.credits, creditsM);
+	}
+	
 	
 	@Override
 	public JPanel getPanel() {

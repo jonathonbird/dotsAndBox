@@ -9,7 +9,7 @@ public class Credits implements Menu{
 	private JPanel panel;
 	private JButton back;
 	
-	public Credits() {
+	private Credits() {
 		this.panel= new Background(Paths.BACKGROUND_CREDITS);
 		panel.setLayout(null);
 		
@@ -28,5 +28,8 @@ public class Credits implements Menu{
 		return instance;
 	}
 
+	public void setUpActionListeners(MenuBasic base,Menu Main) {
+    	Menu.setNavigationTo(base, this.back, Main);
+    }
 	
 }

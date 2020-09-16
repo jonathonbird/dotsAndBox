@@ -7,10 +7,18 @@ public class MenuBasic {
 	private JFrame frame;
 	private JPanel panel;
 	
+	private MainMenu main;
+	private PlayMenu play;
+	private Rules rules;
+	private Credits credits;
+	
 	public MenuBasic() {
 		this.frame=new JFrame();
 		frame.setSize(Paths.FRAME_WIDTH, Paths.FRAME_HEIGHT);
 		frame.setResizable(false);
+		
+		setUpMenus();
+		
 		this.panel=new JPanel();
 		frame.add(panel);
 	}
@@ -33,5 +41,19 @@ public class MenuBasic {
 	public void refreshFrame() {
 		frame.setVisible(false);
 		frame.setVisible(true);
+	}
+	
+	private void setUpMenus() {
+		main=(MainMenu) MainMenu.getInstance();
+		play=(PlayMenu) PlayMenu.getInstance();
+		rules=(Rules) Rules.getInstance();
+		credits=(Credits) Credits.getInstance();
+		
+		
+		
+		main.setUpActionListeners(this, play, rules, credits);
+		play.setUpActionListeners(this, main);
+		rules.setUpActionListeners(this, main);
+		credits.setUpActionListeners(this, main);
 	}
 }

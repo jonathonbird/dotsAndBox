@@ -9,7 +9,7 @@ public class Rules implements Menu{
 	private JPanel panel;
 	private JButton back;
 	
-    public Rules() {
+	private Rules() {
     	this.panel= new Background(Paths.BACKGROUND_RULES);
     	panel.setLayout(null);
 		
@@ -26,6 +26,10 @@ public class Rules implements Menu{
     public static Menu getInstance() {
     	if(instance==null) instance=new Rules();
 		return instance;
+    }
+    
+    public void setUpActionListeners(MenuBasic base,Menu Main) {
+    	Menu.setNavigationTo(base, this.back, Main);
     }
     
    
