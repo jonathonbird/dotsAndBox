@@ -13,7 +13,7 @@ public interface Paths {
 	public static final String BUTTON_RULES="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\HowtoPlay.png";
 	public static final String BUTTON_CREDITS="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\Credits.png";
 	
-	public static final String BUTTON_BACK="";
+	public static final String BUTTON_BACK="C:\\Users\\husam\\OneDrive\\Documents\\GitHub\\dotsAndBox\\resources\\BACK.png";
 	public static final String BUTTON_START="";
 	
 	public static final String BUTTON_HUMAN="";

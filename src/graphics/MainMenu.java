@@ -1,18 +1,13 @@
 package graphics;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 
 public class MainMenu implements Menu{
 	private static Menu instance=null;;
 	
-	private JFrame frame;
 	private JPanel MainMenuPanel;
 
 	private JButton play;
