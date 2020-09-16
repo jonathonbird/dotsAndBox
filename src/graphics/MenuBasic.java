@@ -13,11 +13,11 @@ public class MenuBasic {
 	private Credits credits;
 	
 	public MenuBasic() {
+		setUpMenus();
+		
 		this.frame=new JFrame();
 		frame.setSize(Paths.FRAME_WIDTH, Paths.FRAME_HEIGHT);
 		frame.setResizable(false);
-		
-		setUpMenus();
 		
 		this.panel=new JPanel();
 		frame.add(panel);
