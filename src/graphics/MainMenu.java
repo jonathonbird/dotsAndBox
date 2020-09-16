@@ -9,7 +9,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 
-public class MainMenu {
+public class MainMenu implements Menu{
+	private static Menu instance=null;;
+	
 	private JFrame frame;
 	private JPanel MainMenuPanel;
 
@@ -25,6 +27,14 @@ public class MainMenu {
 		System.out.println("Done");
 	}
 	
+	public MainMenu() {
+		this.MainMenuPanel=new Background(Paths.BACKGROUND_MAIN);
+		this.MainMenuPanel.setLayout(null);
+		setUpImageButtons();
+		System.out.println("Done");
+	}
+	
+	@Override
 	public JPanel getPanel() {
 		return this.MainMenuPanel;
 	}
@@ -70,6 +80,11 @@ public class MainMenu {
 		button.setBorderPainted(false);
 		button.setSize(Paths.BUTTONS_WIDTH,Paths.BUTTONS_HEIGHT);
 		return button;
+	}
+
+	public static Menu getInstance() {
+		if(instance==null)instance=new MainMenu();
+		return instance;
 	}
 	
 }
