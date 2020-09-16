@@ -1,5 +1,6 @@
 package graphics;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -21,6 +22,8 @@ public class MenuBasic {
 		frame.setResizable(false);
 		panel=main.getPanel();
 		frame.add(panel);
+		ImageIcon img = new ImageIcon(Paths.TOP_ICON);
+		frame.setIconImage(img.getImage());
 		frame.setVisible(true);
 	}
 	
