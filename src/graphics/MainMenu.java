@@ -19,13 +19,6 @@ public class MainMenu implements Menu{
 	private JButton rules;
 	private JButton credits;
 	
-	public MainMenu(JFrame frame) {
-		this.frame=frame;
-		this.MainMenuPanel=new Background(Paths.BACKGROUND_MAIN);
-		this.MainMenuPanel.setLayout(null);
-		setUpImageButtons();
-		System.out.println("Done");
-	}
 	
 	public MainMenu() {
 		this.MainMenuPanel=new Background(Paths.BACKGROUND_MAIN);
