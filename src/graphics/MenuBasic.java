@@ -18,9 +18,9 @@ public class MenuBasic {
 		this.frame=new JFrame();
 		frame.setSize(Paths.FRAME_WIDTH, Paths.FRAME_HEIGHT);
 		frame.setResizable(false);
-		
-		this.panel=new JPanel();
+		panel=main.getPanel();
 		frame.add(panel);
+		frame.setVisible(true);
 	}
 	
 	public void setVisiblePanel(JPanel newPanel) {
