@@ -14,7 +14,7 @@ public class Rules implements Menu{
     	panel.setLayout(null);
 		
 		back=Menu.backButton();
-		
+		//
 		panel.add(back);
     }
     
