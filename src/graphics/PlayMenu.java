@@ -16,6 +16,8 @@ public class PlayMenu implements Menu{
 	private JButton size2;
 	private JButton size3;
 	
+	private MenuBasic base;
+	
 	private int opt=0;
 	private int size=1;
 
@@ -48,7 +50,10 @@ public class PlayMenu implements Menu{
 	private void setUpPlay(){
 		play = Button(Paths.BUTTON_START);
 		play.setLocation(475,573);
-		play.addActionListener(new ActionListener(){ public void actionPerformed(ActionEvent e){}});
+		play.addActionListener(new ActionListener(){ public void actionPerformed(ActionEvent e){
+			GameMenu game= new GameMenu(base,"p1","p2");
+			base.setVisiblePanel(game.getPanel());
+		}});
 
 	}
 
@@ -133,6 +138,7 @@ public class PlayMenu implements Menu{
 	}
 
 	public void setUpActionListeners(MenuBasic base,Menu Main) {
+		this.base=base;
 	    Menu.setNavigationTo(base, this.back, Main);
 	}
 }
